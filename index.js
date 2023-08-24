@@ -8,6 +8,7 @@ const {flightRoute} = require("./Routes/flight.route");
 const {bookingRoute} = require("./Routes/booking.route");
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.use("/api",userRoute);
